@@ -46,5 +46,14 @@ fun main(args: Array<String>) {
     println("Contains: ${"hellO".contains("el")}")
     println("StringCount: ${"hellO".count()}")
 
-    // Array functions
+    // Collection libraries
+    val li = mutableListOf<String>("hello","world")
+    li[1] = "underworld"
+    println(li[1])
+
+    val dict = mutableMapOf<String,String>("first" to "hello", "second" to "world")
+    dict["second"] = "underworld"
+    dict["third"] = "..."
+    dict.remove("third")
+    println(dict["first"])
 }
